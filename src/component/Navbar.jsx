@@ -23,7 +23,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const Logout = async () => {
     try {
-      const response = await fetch("http://localhost:7000/user/logout" , {
+      const response = await fetch("https://bloggingapp-backend-dci1.vercel.app/user/logout" , {
         method : "GET",
         credentials : "include"
       })
