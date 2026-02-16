@@ -31,6 +31,7 @@ export default function Login() {
       if (success) {
         toast.success(message)
         dispatch(auth(user))
+        localStorage.setItem("token" , res.token)
         navigate("/")
         console.log(user);
       }
