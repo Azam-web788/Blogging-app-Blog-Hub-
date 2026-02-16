@@ -27,11 +27,11 @@ export default function Login() {
         body: JSON.stringify(form),
       })
       const res = await response.json()
-      const {success , message , user} = res
+      const {success , message , user , token} = res
       if (success) {
         toast.success(message)
         dispatch(auth(user))
-        localStorage.setItem("token" , res.token)
+        localStorage.setItem("token" , token)
         navigate("/")
         console.log(user);
       }
