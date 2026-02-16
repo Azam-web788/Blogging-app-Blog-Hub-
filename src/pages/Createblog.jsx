@@ -17,7 +17,7 @@ export default function Createblog() {
     event.preventDefault();
     try {
       setLoading(true);
-      const res = await fetch("https://bloggingapp-backend-dci1.vercel.app/blogs/createBlog", {
+      const res = await fetch("https://bloggingapp-backend-lpr6.vercel.app/blogs/createBlog", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

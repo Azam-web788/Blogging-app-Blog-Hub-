@@ -60,7 +60,7 @@ export default function Profile() {
     setloading(true);
 
     const response = await fetch(
-      `https://bloggingapp-backend-dci1.vercel.app/user/edituser/${id}`,
+      `https://bloggingapp-backend-lpr6.vercel.app/user/edituser/${id}`,
       {
         method: "PUT",
         headers: { "Content-Type": "application/json" },

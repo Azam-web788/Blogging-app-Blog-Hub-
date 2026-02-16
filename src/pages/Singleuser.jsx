@@ -7,7 +7,7 @@ export default function Singleuser() {
   const { id } = useParams();
   const [user, setUser] = useState(null);
   const [blogs, setBlogs] = useState([]);
-  const api = ["https://bloggingapp-backend-dci1.vercel.app/", "user/singleuser/"];
+  const api = ["https://bloggingapp-backend-lpr6.vercel.app/", "user/singleuser/"];
 
   async function UserwithBlogs() {
     try {

@@ -21,11 +21,11 @@ export default function Userblogs() {
   const [editingId , setEditingId] = useState("")
   const myWidget = useRef(null)
   const [loading , setLoading] = useState(false)
-  const api = ["https://bloggingapp-backend-dci1.vercel.app/", "/blogs/deleteBlog/", "/blogs/editBlog/"]
+  const api = ["https://bloggingapp-backend-lpr6.vercel.app/", "/blogs/deleteBlog/", "/blogs/editBlog/"]
   async function AllBlogs() {
     try {
       const response = await fetch(
-        "https://bloggingapp-backend-dci1.vercel.app/blogs/userBlogs",
+        "https://bloggingapp-backend-lpr6.vercel.app/blogs/userBlogs",
         {
           method: "GET",
           credentials: "include",

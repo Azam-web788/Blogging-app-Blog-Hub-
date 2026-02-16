@@ -56,7 +56,7 @@ export default function Signup() {
     e.preventDefault();
     try {
       setLoading(true);
-      const res = await fetch("https://bloggingapp-backend-dci1.vercel.app/user/register", {
+      const res = await fetch("https://bloggingapp-backend-lpr6.vercel.app/user/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),

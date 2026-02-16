@@ -17,7 +17,7 @@ export default function Blogs() {
     async function GetData() {
       try {
         setLoading(true);
-        const response = await fetch("https://bloggingapp-backend-dci1.vercel.app/blogs/allBlogs");
+        const response = await fetch("https://bloggingapp-backend-lpr6.vercel.app/blogs/allBlogs");
         const res = await response.json();
         setBlogs(res.allBlogs);
       } catch (err) {

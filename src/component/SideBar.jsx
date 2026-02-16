@@ -10,7 +10,7 @@ export default function Sidebar() {
   const navigate = useNavigate()
   async function Logout() {
     try {
-      const response = await fetch("https://bloggingapp-backend-dci1.vercel.app/user/logout" , {
+      const response = await fetch("https://bloggingapp-backend-lpr6.vercel.app/user/logout" , {
         method : "GET",
         credentials : "include"
       })

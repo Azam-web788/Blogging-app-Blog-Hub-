@@ -20,7 +20,7 @@ export default function Login() {
     event.preventDefault()
     try {
       setLoading(true)
-      const response = await fetch("https://bloggingapp-backend-dci1.vercel.app/user/login" ,  {
+      const response = await fetch("https://bloggingapp-backend-lpr6.vercel.app/user/login" ,  {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials : "include",
